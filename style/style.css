@@ -1,0 +1,153 @@
+*{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    pad: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: #FF97D9;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+h1 span {
+    font-weight: 800;
+    color: #FF97D9;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#awaa-cat {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#awaa-cat:hover {
+    box-shadow: 0px 10px 15px -3px #FF97D9;
+    transform: scale(1.1);
+}
+
+.buttons {
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;
+    transition: .5s ;
+    font-weight: 600;
+
+}
+
+.btn-primary{
+    color: #FF97D9;
+    border: 2px solid #FF97D9;
+    background-color: transparent;
+}
+
+.btn-secondary{
+    color: #FFF;
+    border: 2px solid #FF97D9;
+    background-color: #FF97D9;
+}
+
+.btn-primary:hover {
+    color: #FFF;
+    background-color: #FF97D9;
+    transform: scale(1.05);
+}
+
+.btn-secondary:hover {
+    color: #FF97D9;
+    background-color: transparent;
+    transform: scale(1.05);
+}
+
+.overlay.show {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000064;
+}
+
+.overlay.hidden {
+    display: none;
+}
+
+.overlay .image-cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #FFF;
+}
+
+.overlay .image-cat .exit-container {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+.overlay .image-cat .exit-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF97D9;
+    color: #FFF;
+    border: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: .5s;
+}
+
+.overlay .image-cat .exit-container button:hover {
+    transform: scale(1.1);
+}
+
+.image-cat img {
+    height: 250px;
+    width: 250px;
+}
